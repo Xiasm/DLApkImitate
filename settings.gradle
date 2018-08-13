@@ -1,1 +1,1 @@
-include ':host', ':dl-plugin-standard'
+include ':host', ':dl-plugin-standard', ':plugin-a'
