@@ -31,7 +31,6 @@ import static android.content.ContentValues.TAG;
 public class DLManager {
     private static final String TAG = "DLManager";
     private static DLManager instance;
-    private Context context;
     private PackageInfo packageInfo;
     private DexClassLoader dexClassLoader;
     private Resources resources;
@@ -49,10 +48,6 @@ public class DLManager {
 
     private DLManager () {
 
-    }
-
-    public void setContext(Context context) {
-        this.context = context;
     }
 
     public void loadPlugin(Context context, String pluginName) {
